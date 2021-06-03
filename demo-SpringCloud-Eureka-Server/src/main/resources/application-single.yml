@@ -1,0 +1,11 @@
+server:
+  port: 9761 # 指定端口
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port} # 指定服务ID
+    prefer-ip-address: true # 显示IP
+  client:
+    register-with-eureka: false # 一个服务端本身也是客户端，设置 false 关闭自己注册自己（默认true）
+    fetch-registry: false # 本服务端是否从其他服务器获取已注册服务（默认true）
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/ # 服务端注册地址

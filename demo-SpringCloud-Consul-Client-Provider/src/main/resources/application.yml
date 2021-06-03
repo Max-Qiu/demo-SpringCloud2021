@@ -1,0 +1,9 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consul-client-provider
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500

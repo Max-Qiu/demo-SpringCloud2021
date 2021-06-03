@@ -1,0 +1,8 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: zookeeper-client-provider
+  cloud:
+    zookeeper:
+      connect-string: 192.168.220.101:2181 # ZooKeeper服务端地址

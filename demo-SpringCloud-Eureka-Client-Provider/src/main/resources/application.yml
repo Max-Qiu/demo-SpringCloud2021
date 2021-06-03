@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: eureka-client-provider
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      # 单节点
+      # defaultZone: http://127.0.0.1:8761/eureka
+      # 多节点
+      defaultZone: http://eureka-server-1:8761/eureka/,http://eureka-server-2:8762/eureka/,http://eureka-server-3:8763/eureka/
