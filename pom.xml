@@ -20,12 +20,14 @@
 
     <modules>
         <module>demo-SpringCloud-Consul-Client-Consumer</module>
+        <module>demo-SpringCloud-Consul-Client-Provider</module>
         <module>demo-SpringCloud-Eureka-Client-Consumer</module>
         <module>demo-SpringCloud-Eureka-Client-Provider</module>
+        <module>demo-SpringCloud-Eureka-Gateway</module>
+        <module>demo-SpringCloud-Eureka-OpenFeign-Client-Consumer</module>
         <module>demo-SpringCloud-Eureka-Server</module>
         <module>demo-SpringCloud-ZooKeeper-Client-Consumer</module>
         <module>demo-SpringCloud-Zookeeper-Client-Provider</module>
-        <module>demo-SpringCloud-Consul-Client-Provider</module>
     </modules>
 
     <dependencies>
