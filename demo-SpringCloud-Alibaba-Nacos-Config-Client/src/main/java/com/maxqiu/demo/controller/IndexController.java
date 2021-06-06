@@ -1,6 +1,7 @@
-package demo.controller;
+package com.maxqiu.demo.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("")
+@RefreshScope // 支持Nacos的动态刷新功能。
 public class IndexController {
-    @Value("${spring.application.name}:${server.port}")
-    String info;
+    @Value("${config.info}")
+    private String configInfo;
 
-    @GetMapping("info")
-    public String info() {
-        return info;
+    @GetMapping("/configInfo")
+    public String getConfigInfo() {
+        return configInfo;
     }
 }

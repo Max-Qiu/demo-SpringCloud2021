@@ -19,6 +19,9 @@
     </properties>
 
     <modules>
+        <module>demo-SpringCloud-Alibaba-Nacos-Client-Consumer</module>
+        <module>demo-SpringCloud-Alibaba-Nacos-Client-Provider</module>
+        <module>demo-SpringCloud-Alibaba-Nacos-Config-Client</module>
         <module>demo-SpringCloud-Consul-Client-Consumer</module>
         <module>demo-SpringCloud-Consul-Client-Provider</module>
         <module>demo-SpringCloud-Eureka-Client-Consumer</module>
@@ -46,6 +49,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>2020.0.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- SpringCloud Alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2021.1</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

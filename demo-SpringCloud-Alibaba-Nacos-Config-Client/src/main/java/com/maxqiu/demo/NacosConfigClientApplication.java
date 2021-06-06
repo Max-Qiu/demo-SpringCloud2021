@@ -1,4 +1,4 @@
-package demo;
+package com.maxqiu.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,8 +9,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ConsulClientProviderApplication {
+public class NacosConfigClientApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ConsulClientProviderApplication.class, args);
+        SpringApplication.run(NacosConfigClientApplication.class, args);
     }
 }
