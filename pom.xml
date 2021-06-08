@@ -22,6 +22,7 @@
         <module>demo-SpringCloud-Alibaba-Nacos-Client-Consumer</module>
         <module>demo-SpringCloud-Alibaba-Nacos-Client-Provider</module>
         <module>demo-SpringCloud-Alibaba-Nacos-Config-Client</module>
+        <module>demo-SpringCloud-Alibaba-Nacos-Sentinel</module>
         <module>demo-SpringCloud-Consul-Client-Consumer</module>
         <module>demo-SpringCloud-Consul-Client-Provider</module>
         <module>demo-SpringCloud-Eureka-Client-Consumer</module>
