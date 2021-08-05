@@ -1,4 +1,4 @@
-package com.maxqiu.demo.controller;
+package com.maxqiu.demo.config.controller;
 
 import java.util.HashMap;
 import java.util.Map;
