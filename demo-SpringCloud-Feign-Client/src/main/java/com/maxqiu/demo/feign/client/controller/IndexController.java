@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.maxqiu.demo.common.pojo.ParamsVO;
 import com.maxqiu.demo.feign.client.feign.ServerFeignService;
 
 /**
@@ -17,7 +16,7 @@ public class IndexController {
     @Autowired
     private ServerFeignService serverFeignService;
 
-    @GetMapping("")
+    @GetMapping("index")
     public Map<String, String> index() {
         return serverFeignService.index();
     }
@@ -25,10 +24,5 @@ public class IndexController {
     @GetMapping("timeout")
     public Map<String, String> timeout() {
         return serverFeignService.timeout();
-    }
-
-    @GetMapping("queryMap")
-    public String queryMap(ParamsVO vo) {
-        return serverFeignService.queryMap(vo);
     }
 }

@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "eebe4e3f-6d26-48ef-9b04-df51d6ed597e",
+		"name": "feign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "normal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:40301/demo/normal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "40301",
+					"path": [
+						"demo",
+						"normal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "singleParam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:40301/demo/singleParam?param=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "40301",
+					"path": [
+						"demo",
+						"singleParam"
+					],
+					"query": [
+						{
+							"key": "param",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "multiParam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:40301/demo/multiParam?param1=a&param2=b",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "40301",
+					"path": [
+						"demo",
+						"multiParam"
+					],
+					"query": [
+						{
+							"key": "param1",
+							"value": "a"
+						},
+						{
+							"key": "param2",
+							"value": "b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "objParam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:40301/demo/objParam?name=tom&age=18",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "40301",
+					"path": [
+						"demo",
+						"objParam"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "tom"
+						},
+						{
+							"key": "age",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jsonParam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"tom\",\r\n    \"age\": 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:40301/demo/jsonParam",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "40301",
+					"path": [
+						"demo",
+						"jsonParam"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

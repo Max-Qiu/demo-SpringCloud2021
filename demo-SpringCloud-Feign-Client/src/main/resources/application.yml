@@ -13,9 +13,7 @@ spring:
         group: DEFAULT_GROUP # 服务所在分组，一般用于隔离不同环境的服务。默认：DEFAULT_GROUP
         service: ${spring.application.name} # 注册的服务名称。默认：${spring.application.name}
         weight: 1 # 权重
-logging:
-  level:
-    com.maxqiu.demo.feign.client.feign.**: debug # 指定Feign接口日志级别为debug（建议开发环境启用）
+# Feign配置
 feign:
   compression: # 压缩设置
     request: # 请求压缩
@@ -39,3 +37,7 @@ feign:
       enabled: true # Spring Data Support。默认：false
   httpclient:
     enabled: true
+# 日志配置
+logging:
+  level:
+    com.maxqiu.demo.**.feign.**: debug # 指定Feign接口日志级别为debug（建议仅开发环境启用）

@@ -34,12 +34,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- OpenFeign -->
+        <!-- 公用实体 -->
+        <dependency>
+            <groupId>com.maxqiu.demo</groupId>
+            <artifactId>demo-SpringCloud-Common</artifactId>
+        </dependency>
+        <!-- 服务调用 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-        <!-- LoadBalancer -->
+        <!-- 负载均衡 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
@@ -48,11 +53,6 @@
         <dependency>
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>caffeine</artifactId>
-        </dependency>
-        <!-- 公用实体 -->
-        <dependency>
-            <groupId>com.maxqiu.demo</groupId>
-            <artifactId>demo-SpringCloud-Common</artifactId>
         </dependency>
     </dependencies>
 </project>

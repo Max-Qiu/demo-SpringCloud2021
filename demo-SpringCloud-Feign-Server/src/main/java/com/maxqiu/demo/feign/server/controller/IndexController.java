@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.maxqiu.demo.common.pojo.ParamsVO;
-
 /**
  * @author Max_Qiu
  */
@@ -17,7 +15,7 @@ public class IndexController {
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("")
+    @GetMapping("index")
     public Map<String, String> index() {
         HashMap<String, String> map = new HashMap<>();
         map.put("method", "index");
@@ -33,13 +31,8 @@ public class IndexController {
             e.printStackTrace();
         }
         HashMap<String, String> map = new HashMap<>();
-        map.put("method", "index");
+        map.put("method", "timeout");
         map.put("port", port);
         return map;
-    }
-
-    @GetMapping("queryMap")
-    public String queryMap(ParamsVO vo) {
-        return vo.toString();
     }
 }
