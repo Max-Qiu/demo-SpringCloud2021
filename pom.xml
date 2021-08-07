@@ -24,8 +24,11 @@
         <module>demo-SpringCloud-Discovery</module>
         <!-- 配置中心 -->
         <module>demo-SpringCloud-Config</module>
-        <module>demo-SpringCloud-Feign-Client</module>
-        <module>demo-SpringCloud-Feign-Server</module>
+        <!-- 服务调用 -->
+        <module>demo-SpringCloud-Feign</module>
+        <!-- 服务端 -->
+        <module>demo-SpringCloud-Server</module>
+        <!-- 公共实体对象 -->
         <module>demo-SpringCloud-Common</module>
     </modules>
 
