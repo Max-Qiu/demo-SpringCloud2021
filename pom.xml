@@ -30,6 +30,8 @@
         <module>demo-SpringCloud-Server</module>
         <!-- 公共实体对象 -->
         <module>demo-SpringCloud-Common</module>
+        <!-- 网关 -->
+        <module>demo-SpringCloud-Gateway</module>
     </modules>
 
     <dependencies>
