@@ -15,17 +15,17 @@ spring:
         weight: 1 # 权重
 # Feign配置
 feign:
-  compression: # 压缩设置
-    request: # 请求压缩
-      enabled: true # 是否启用。默认：false
-      mime-types: # 支持的mime类型。示例即默认配置
-        - "text/xml"
-        - "application/xml"
-        - "application/json"
-      min-request-size: 2048 # 启用压缩的最小内容大小。
-    response: # 响应压缩
-      enabled: true # 是否启用。默认：false
-      useGzipDecoder: true # 启用gzip解码器来解码gzip响应：
+  #  compression: # 压缩设置（暂时不要开启，目前版本还有bug）
+  #    request: # 请求压缩
+  #      enabled: false # 是否启用。默认：false
+  #      mime-types: # 支持的mime类型。示例即默认配置
+  #        - "text/xml"
+  #        - "application/xml"
+  #        - "application/json"
+  #      min-request-size: 2048 # 启用压缩的最小内容大小。
+  #    response: # 响应压缩
+  #      enabled: false # 是否启用。默认：false
+  #      useGzipDecoder: false # 启用gzip解码器来解码gzip响应。默认false
   client:
     config:
       default: # feign客户端全局默认配置
@@ -35,8 +35,6 @@ feign:
   autoconfiguration:
     jackson:
       enabled: true # Spring Data Support。默认：false
-  httpclient:
-    enabled: true
 # 日志配置
 logging:
   level:
