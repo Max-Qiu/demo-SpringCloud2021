@@ -9,6 +9,7 @@
 网关 | Gateway
 负载均衡 | LoadBalancer
 服务调用 | OpenFeign
+链路追踪 | Sleuth + zipkin
 分布式会话 | Spring Session
 
 # 父POM

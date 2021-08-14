@@ -1,4 +1,4 @@
-package com.maxqiu.demo.feign.server.controller;
+package com.maxqiu.demo.server.controller;
 
 import java.util.HashMap;
 import java.util.Map;

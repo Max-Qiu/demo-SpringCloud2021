@@ -32,6 +32,7 @@
         <module>demo-SpringCloud-Common</module>
         <!-- 网关 -->
         <module>demo-SpringCloud-Gateway</module>
+        <module>demo-SpringCloud-Sleuth</module>
     </modules>
 
     <dependencies>

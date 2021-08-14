@@ -1,0 +1,10 @@
+server:
+  port: 40401
+spring:
+  application:
+    name: sleuth # 服务名称（必须配置）
+  sleuth:
+    sampler:
+      probability: 1 # 采样比例，0.0 - 1.0 之间
+  zipkin:
+    base-url: http://127.0.0.1:9411 # zipkin 服务端地址

@@ -1,4 +1,4 @@
-package com.maxqiu.demo.feign.client.feign;
+package com.maxqiu.demo.feign.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;

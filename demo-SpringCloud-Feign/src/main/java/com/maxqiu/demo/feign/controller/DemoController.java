@@ -1,4 +1,4 @@
-package com.maxqiu.demo.feign.client.controller;
+package com.maxqiu.demo.feign.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maxqiu.demo.common.pojo.ParamsVO;
-import com.maxqiu.demo.feign.client.feign.DemoFeignService;
+import com.maxqiu.demo.feign.feign.DemoFeignService;
 
 /**
  * @author Max_Qiu
