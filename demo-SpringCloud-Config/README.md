@@ -19,7 +19,7 @@ Nacos服务端安装教程：
 <dependency>
     <groupId>com.alibaba.nacos</groupId>
     <artifactId>nacos-client</artifactId>
-    <version>2.0.2</version>
+    <version>2.0.3</version>
 </dependency>
 <!-- 配置中心 -->
 <dependency>

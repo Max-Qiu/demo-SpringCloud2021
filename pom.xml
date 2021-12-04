@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.6</version>
+        <version>2.6.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -32,6 +32,7 @@
         <module>demo-SpringCloud-Common</module>
         <!-- 网关 -->
         <module>demo-SpringCloud-Gateway</module>
+        <!-- 链路追踪 -->
         <module>demo-SpringCloud-Sleuth</module>
     </modules>
 
@@ -50,7 +51,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2020.0.3</version>
+                <version>2021.0.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
