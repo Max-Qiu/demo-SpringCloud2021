@@ -11,4 +11,16 @@
 
     <artifactId>demo-SpringCloud-Common</artifactId>
 
+    <build>
+        <plugins>
+            <!-- 跳过SpringBoot默认打包插件 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
